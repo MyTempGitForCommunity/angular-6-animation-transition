@@ -6,7 +6,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    trigger('clickedDiv', [
+    trigger('animationOption1', [
       state('start', style({
         backgroundColor: 'yellow',
         width: '150px',
@@ -20,10 +20,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
       transition('start => end', animate(1500)),
       transition('end => start', animate('800ms 0.5s ease-out'))
     ]),
-    trigger('animateShowBlock', [
+    trigger('animationOption2', [
       state('close', style({
         opacity: 0,
-        backgroundColor: 'red'
+        backgroundColor: 'yellow'
       })),
       state('open', style({
         opacity: 1,

@@ -1,13 +1,13 @@
 <h1>Animation Option 1</h1>
-<div
-  (click)="changeDivState()"
-  [@clickedDiv]="clickedDivState"
->Click Me</div>
+<div (click)="changeDivState()"
+     [@animationOption1]="clickedDivState"
+>Click Me
+</div>
 
 <h1>Animation Option 2</h1>
 <button (click)="toggleMenu()">Click Me</button>
 <ul *ngIf="isMenuOpen"
-    [@animateShowBlock]="isMenuOpen ? 'open': 'close'"
+    [@animationOption2]="isMenuOpen ? 'open': 'close'"
 >
   <li>Menu Item 1</li>
   <li>Menu Item 2</li>
